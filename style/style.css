@@ -1,0 +1,117 @@
+body {
+	font-family: 'Raleway', sans-serif;
+	font-size: 14px;
+	line-height: 1.1;
+	margin: 0 auto;
+}
+
+*,
+*:after,
+*:before {
+	box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	margin: 0;
+	padding: 0;
+}
+
+/* Conteiner */
+
+.conteiner {
+	width: 100%;
+	max-width: 1170px;
+	margin: 0 auto;
+	/*padding: 0 15px;*/
+}
+
+/* Header */
+
+.header {
+	width: 100%;
+	height: 100px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 10;
+
+}
+
+.header__inner {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 35px 0;
+	border-bottom: 1px solid #4f5168;
+}
+
+.header__logo {
+	text-transform: uppercase;
+	font-size: 30px;
+	color: #fff;
+}
+
+.logo__color-blue {
+	color: #66697e;
+	font-weight: bold;
+}
+
+/* Nav */
+
+.nav {
+
+
+}
+
+.nav__link {
+	font-family: 'Raleway', sans-serif;
+	font-weight: bold;
+	font-size: 13px;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #fff;
+
+	opacity: 0.75;
+	transition: opacity .2s linear;
+
+	margin: 0 25px;
+
+}
+
+.nav__link:hover {
+	opacity: 1;
+}
+
+/* Intro */
+
+.intro {
+	min-height: 750px;
+	padding-top: 100px;
+	width: 100%;
+	background: #2a2d48 url(../img/header-bg/bc-header_01.jpg) no-repeat center;
+	-webkit-background-size: cover;
+	background-size: cover;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.intro__inner {
+	max-width: 880px;
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.intro__title {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+	font-size: 68px;
+}
+
+.intro__suptitle {
+	font-family: 'Raleway', sans-serif;
+	font-size: 22px;
+}
