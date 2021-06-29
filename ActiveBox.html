@@ -6,12 +6,14 @@
 	<link rel="stylesheet" href="style/style.css">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Cardo:ital@1&family=Open+Sans:wght@700&family=Raleway&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 	<script src="https://kit.fontawesome.com/d1839d5a68.js" crossorigin="anonymous"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 	<title>ActiveBox</title>
 </head>
 <body>
 <!-- Header -->
-	<header class="header">
+	<header class="header" id="header">
 		<div class="conteiner">
 			
 			<div class="header__inner">
@@ -19,15 +21,19 @@
 					<a class="logo__link" href="#"><span class="logo__color-blue">active</span>box</a>
 				</div>
 
-				<nav class="nav">
+				<nav class="nav" id="nav">
 
-					<a href="#" class="nav__link">Features</a>
-					<a href="#" class="nav__link">Works</a>
-					<a href="#" class="nav__link">Our Team</a>
-					<a href="#" class="nav__link">Testimonials</a>
-					<a href="#" class="nav__link">Download</a>
+					<a href="#" class="nav__link" data-scroll="#features">Features</a>
+					<a href="#" class="nav__link" data-scroll="#works">Works</a>
+					<a href="#" class="nav__link" data-scroll="#team">Our Team</a>
+					<a href="#" class="nav__link" data-scroll="#testimonials">Testimonials</a>
+					<a href="#" class="nav__link" data-scroll="#download">Download</a>
 
 				</nav>
+
+				<button class="nav-button" id="nav-button" type="button">
+					<span class="nav-button__item">Meny</span>
+				</button>
 
 			</div><!--header__inner -->
 
@@ -35,7 +41,7 @@
 	</header><!-- header -->
 
 <!-- Intro -->
-	<div class="intro">
+	<div class="intro" id="intro">
 		<div class="conteiner">
 
 			<div class="intro__inner">
@@ -53,7 +59,7 @@
 	</div><!-- intro -->
 
 <!-- Features -->
-	<section class="section">
+	<section class="section" id="features">
 		<div class="conteiner">
 			
 			<div class="features">
@@ -126,7 +132,7 @@
 
 <!-- Projects -->
 	
-	<div class="projects">
+	<div class="projects" id="works">
 		<div class="projects__item">
 
 				
@@ -247,7 +253,7 @@
 
 <!-- Team -->
 
-	<section class="section">
+	<section class="section" id="team">
 		<div class="conteiner">
 			
 			<div class="team">
@@ -361,29 +367,57 @@
 	</section>
 
 
-	<section class="section section__review-full">
+	<section class="section section__review-full" id="testimonials">
 		<div class="reviews">
 
-			<div class="reviews__item">
-				<div class="reviews__image">
-					<img class="reviews__photo" src="img/reviews/Layer 19.jpg" alt="">
-				</div>
-			</div><!-- reviews__item -->
-			
+			<div class="reviews__slick" id="reviews__slider">
+				<div  class="slick-item">
+					<div class="reviews__item">
 
-			<div class="reviews__item">
-				<div class="reviews__content">
-					<div class="reviews__text">“Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quam...”</div>
+						<div class="reviews__img">
+							<img class="reviews__photo" src="img/reviews/Layer 19.jpg" alt="">
+						</div>
 
-					<div class="reviews__post">Susan Sims, Interaction Designer at XYZ</div>
+						<div class="reviews__content">
 
-				</div> <!-- reviews__content -->
-			</div> <!-- reviews__item -->
+							<div class="reviews__text">“Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quam...”</div>
 
-		</div> <!-- reviews -->
-	</section> <!-- section -->
+							<div class="reviews__post">Susan Sims, Interaction Designer at XYZ</div>
 
-	<section class="section section-download">
+						</div> <!-- reviews__content -->
+
+					</div><!-- reviews__item -->
+				</div><!-- slick-item -->
+
+
+
+				<div class="slick-item">
+					<div class="reviews__item">
+
+						<div class="reviews__img">
+							<img class="reviews__photo" src="img/reviews/Layer 19.jpg" alt="">
+						</div>
+
+						<div class="reviews__content">
+
+							<div class="reviews__text">“Lorem ipsum dolor sit amet consectetur, adipisicing, elit. Numquam est mollitia ex...”</div>
+
+							<div class="reviews__post">Susan Sims, Interaction Designer at XYZ</div>
+
+						</div> <!-- reviews__content -->
+
+					</div><!-- reviews__item -->
+
+				</div><!-- reviews__slider -->
+			</div><!-- slick-item -->
+
+		</div><!-- reviews -->	
+		
+	</section>
+
+	
+
+	<section class="section section-download" id="download">
 		<div class="conteiner">
 			
 			<div class="download">
@@ -458,7 +492,10 @@
 			</div><!-- copyright -->
 
 		</div><!-- conteiner -->
-</footer>
+	</footer>
 
+<!-- JavaScript -->
+<script src="JavaScript/app.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </body>
 </html>
