@@ -63,10 +63,10 @@ $(function (){
 
 	});
 
-	$("html, body").on("click", function() {
+	/*$("html, body").on("click", function() {
 		navButton.removeClass("nav-button_active");
 		nav.removeClass("nav_active");
-	});
+	});*/
 
 	/* Reviews-slider */
 
